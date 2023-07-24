@@ -1,14 +1,18 @@
+import Link from 'next/link';
 import React from 'react';
 
 export default function Footer() {
   return (
     <>
-      <footer className='text-gray-600 body-font'>
-        <div className='bg-gray-100'>
+      <footer className=' body-font'>
+        <div className=''>
           <div className='container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col'>
-            <a className='flex title-font font-medium items-center md:justify-start justify-center text-gray-900'>
+            <Link
+              href='/'
+              className='flex title-font font-medium items-center md:justify-start justify-center text-gray-900'
+            >
               <span className='ml-3 text-xl'>송원석 포트폴리오</span>
-            </a>
+            </Link>
             <p className='text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4'>
               © 2020 Tailblocks —
               <a
@@ -24,9 +28,9 @@ export default function Footer() {
               <a className='text-gray-500'>
                 <svg
                   fill='currentColor'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  stroke-width='2'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
                   className='w-5 h-5'
                   viewBox='0 0 24 24'
                 >
@@ -36,9 +40,9 @@ export default function Footer() {
               <a className='ml-3 text-gray-500'>
                 <svg
                   fill='currentColor'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  stroke-width='2'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
                   className='w-5 h-5'
                   viewBox='0 0 24 24'
                 >
@@ -49,9 +53,9 @@ export default function Footer() {
                 <svg
                   fill='none'
                   stroke='currentColor'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  stroke-width='2'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
                   className='w-5 h-5'
                   viewBox='0 0 24 24'
                 >
@@ -63,9 +67,9 @@ export default function Footer() {
                 <svg
                   fill='currentColor'
                   stroke='currentColor'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  stroke-width='0'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='0'
                   className='w-5 h-5'
                   viewBox='0 0 24 24'
                 >
