@@ -34,8 +34,11 @@ export default function Header() {
               프로젝트
             </Link>
 
-            <Link className='mr-5 hover:text-gray-900' href='/'>
-              연락하기
+            <Link
+              className='mr-5 hover:text-gray-900'
+              href='https://github.com/CircleSeok'
+            >
+              깃허브
             </Link>
           </nav>
           {/* 다크모드 토글 버튼 작업 */}
