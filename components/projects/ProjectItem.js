@@ -10,7 +10,7 @@ export default function ProjectItem({ data }) {
   const tags = data.properties.Tags.multi_select;
 
   return (
-    <div className='flex flex-col m-3 bg-slate-700 rounded-xl w-full'>
+    <div className='project-card'>
       <Image
         className='rounded-t-xl'
         src={imgSrc}
