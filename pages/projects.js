@@ -5,8 +5,6 @@ import { TOKEN, DATABASE_ID } from '@/config';
 import ProjectItem from '@/components/projects/ProjectItem';
 
 export default function Projects({ projects }) {
-  console.log(projects);
-
   return (
     <Layout>
       <div className='flex flex-col items-center justify-center min-h-screen px-6 mb-10'>
@@ -64,8 +62,6 @@ export async function getStaticProps() {
   const projectNames = projects.results.map(
     (aProject) => aProject.properties.Name.title[0]?.plain_text
   );
-
-  console.log(`projectNames': ${projectNames}`);
 
   return {
     props: { projects },
