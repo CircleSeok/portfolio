@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 export default function ProjectItem({ data }) {
@@ -10,12 +11,12 @@ export default function ProjectItem({ data }) {
 
   return (
     <div className='project-card'>
-      <img
+      <Image
         className='rounded-t-xl'
         src={imgSrc}
         alt='cover image'
-        width='100%'
-        height='60%'
+        width={100}
+        height={60}
         layout='responsive'
         objectFit='cover'
         quality={100}
