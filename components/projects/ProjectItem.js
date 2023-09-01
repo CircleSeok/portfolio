@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/legacy/image';
 
 export default function ProjectItem({ data }) {
   const title = data.properties.Name.title[0].plain_text;
@@ -11,7 +10,7 @@ export default function ProjectItem({ data }) {
 
   return (
     <div className='project-card'>
-      <Image
+      <img
         className='rounded-t-xl'
         src={imgSrc}
         alt='cover image'
