@@ -20,7 +20,6 @@ export default function Projects({ projects }) {
         </h1>
 
         <div className='grid grid-cols-1 md:grid-cols-2 m-6 py-10 gap-8 w-10/12'>
-          {/* w-full */}
           {projects.results.map((aProject) => (
             <ProjectItem key={aProject.id} data={aProject} />
           ))}
@@ -32,7 +31,7 @@ export default function Projects({ projects }) {
 
 //빌드 타임에 호출
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const options = {
     method: 'POST',
     headers: {
@@ -65,6 +64,5 @@ export async function getStaticProps() {
 
   return {
     props: { projects },
-    revalidate: 1,
   };
 }

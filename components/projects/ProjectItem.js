@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-
 export default function ProjectItem({ data }) {
   const title = data.properties.Name.title[0].plain_text;
   const github = data.properties.GitHub.url;

@@ -7,6 +7,7 @@ const nextConfig = {
       'images.unsplash.com',
       's3.us-west-2.amazonaws.com',
       'prod-files-secure.s3.us-west-2.amazonaws.com',
+      'velog.velcdn.com',
     ],
     format: ['image/png', 'image/webp', 'image/jpeg'],
   },
